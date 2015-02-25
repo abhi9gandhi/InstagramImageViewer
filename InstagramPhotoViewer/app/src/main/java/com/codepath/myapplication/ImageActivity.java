@@ -43,7 +43,7 @@ public class ImageActivity extends ActionBarActivity {
         // Setup refresh listener which triggers new data loading
         swipeContainer.setOnRefreshListener(new OnRefreshListener() {
             @Override
-            public void onRefresh() {sou
+            public void onRefresh() {
                 aphoto.clear();
                 fetchPhotos();
                 swipeContainer.setRefreshing(false);
@@ -87,8 +87,8 @@ public class ImageActivity extends ActionBarActivity {
                         photo.Timestamp = DateUtils.getRelativeTimeSpanString(Timestamp * 1000, System.currentTimeMillis(),DateUtils.SECOND_IN_MILLIS);
 
                         JSONArray CommentArray = photoJSON.getJSONObject("comments").getJSONArray("data");
+                        photo.comments = new String[2][2];
                         if (CommentArray != null) {
-                            photo.comments = new String[CommentArray.length()][2];
                             for (int j = 0; j < CommentArray.length() && j < 2; j++) {
                                 JSONObject CommentJSON = CommentArray.getJSONObject(j);
                                 photo.comments[j][0] = CommentJSON.getJSONObject("from").getString("username");
@@ -97,7 +97,7 @@ public class ImageActivity extends ActionBarActivity {
                         }
                         photo.type = photoJSON.getString("type");
                         if (photoJSON.getString("type").equals("image")) {
-                            if (photoJSON.getJSONObject("caption").getString("text") != null) {
+                            if (photoJSON.getJSONObject("caption") != null) {
                                 photo.caption = photoJSON.getJSONObject("caption").getString("text");
                             }
                             if (photoJSON.getJSONObject("images").getJSONObject("standard_resolution").getString("url") != null) {
