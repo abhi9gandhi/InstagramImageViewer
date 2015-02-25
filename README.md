@@ -14,4 +14,6 @@ Advanced: Display each photo with the same style and proportions as the real Ins
 Advanced: Display each user profile image using a RoundedImageView
 Advanced: Display a nice default placeholder graphic for each image during loading (read more about Picasso)
 Advanced: Improve the user interface through styling and coloring
-Bonus: Allow video posts to be played in full-screen using the VideoView
+Bonus: Allow video posts to be played in full-screen using the 
+
+![alt tag](https://github.com/abhi9gandhi/InstagramImageViewer/blob/master/ImageViewer.gif)
