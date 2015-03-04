@@ -5,15 +5,12 @@ Simple image Viewer that allows you to check latest popular photos and videos
 
 Time spent: 5 hours spent in total
 
-
-Completed all the required stories and below mentioned optional stories
-
-Advanced: Add pull-to-refresh for popular stream with SwipeRefreshLayout
-Advanced: Show latest comment for each photo (bonus: show last 2 comments)
-Advanced: Display each photo with the same style and proportions as the real Instagram (see screens below)
-Advanced: Display each user profile image using a RoundedImageView
-Advanced: Display a nice default placeholder graphic for each image during loading (read more about Picasso)
-Advanced: Improve the user interface through styling and coloring
-Bonus: Allow video posts to be played in full-screen using the 
+Advanced: Robust error handling, check if internet is available, handle error cases, network failures
+Advanced: Use the ActionBar SearchView or custom layout as the query box instead of an EditText
+Advanced: User can share an image to their friends or email it to themselves
+Advanced: Replace Filter Settings Activity with a lightweight modal overlay
+Advanced: Improve the user interface and experiment with image assets and/or styling and coloring
+Bonus: Use the StaggeredGridView to display improve the grid of image results
+Bonus: User can zoom or pan images displayed in full-screen detail view
 
 ![alt tag](https://github.com/abhi9gandhi/InstagramImageViewer/blob/master/ImageViewer.gif)
